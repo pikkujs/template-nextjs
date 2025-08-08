@@ -1,0 +1,46 @@
+{
+  "name": "test-app",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@pikku/core": "^0.9.1",
+    "@pikku/jose": "^0.9.2",
+    "@pikku/schema-cfworker": "^0.9.1",
+    "@pikku/fetch": "^0.9.1",
+    "@pikku/next": "^0.9.1",
+    "next": "^15",
+    "react": "^19",
+    "react-dom": "^19",
+    "tslib": "^2.7.0",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@pikku/cli": "^0.9.1",
+    "@pikku/fetch": "^0.9.1",
+    "@pikku/websocket": "^0.9.1",
+    "@types/node": "^20",
+    "concurrently": "^9.2.0",
+    "typescript": "^5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "pikku": "pikku all",
+    "test:template": "bash run-tests.sh --build 'next build' --url http://localhost:3000/api",
+    "test:http": "npx tsx clients/http.ts",
+    "test:rpc": "npx tsx clients/rpc.ts",
+    "test:websocket": "npx text clients/websocket.ts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "pikku all",
+    "test": "npm run test:http",
+    "stackblitz": "concurrently 'pikku --watch --silent' 'npm run dev'"
+  },
+  "stackblitz": {
+    "startCommand": "npm run stackblitz"
+  }
+}
