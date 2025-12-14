@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "module": "NodeNext",
+    "moduleResolution": "Node16",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "target": "ESNext",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    ".pikku/*",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".pikku/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
