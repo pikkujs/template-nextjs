@@ -1,0 +1,13 @@
+{
+  "listTodos": "listTodos",
+  "getTodo": "getTodo",
+  "createTodo": "createTodo",
+  "updateTodo": "updateTodo",
+  "deleteTodo": "deleteTodo",
+  "completeTodo": "completeTodo",
+  "login": "login",
+  "getMe": "getMe",
+  "logout": "logout",
+  "onTestEvent": "onTestEvent",
+  "rpcCaller": "rpcCaller"
+}
